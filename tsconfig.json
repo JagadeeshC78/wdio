@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@Resources/*": [ "src/resources/*" ],
+      "@WebPages/*": [ "src/web/pages/*" ],
+      "@WebStatic/*": [ "src/web/constant/static/*" ],
+      "@WebConfig/*": [ "src/config/*" ]
+    },
+    "types": [
+      "node",
+      "jest",
+      "mocha",
+      "expect-webdriverio", 
+      "@wdio/globals/types",
+      "@wdio/mocha-framework",
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
